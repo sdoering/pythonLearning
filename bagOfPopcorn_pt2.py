@@ -94,8 +94,8 @@ for review in unlabeled_train["review"]:
 
 print len(sentences)
 
-
-
+# WORKING ON PERFORMANCE OPTIMIZATION
+"""
 # Import the built-in logging module and configure it so that Word2Vec 
 # creates nice output messages
 import logging
@@ -105,7 +105,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',\
 # Set values for various parameters
 num_features = 300    # Word vector dimensionality                      
 min_word_count = 40   # Minimum word count                        
-num_workers = 6       # Number of threads to run in parallel
+num_workers = 12       # Number of threads to run in parallel
 context = 10          # Context window size                                                                                    
 downsampling = 1e-3   # Downsample setting for frequent words
 
@@ -124,3 +124,4 @@ model.init_sims(replace=True)
 # save the model for later use. You can load it later using Word2Vec.load()
 model_name = "300features_40minwords_10context"
 model.save(model_name)
+"""

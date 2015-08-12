@@ -95,6 +95,8 @@ for review in unlabeled_train["review"]:
 print len(sentences)
 
 # WORKING ON PERFORMANCE OPTIMIZATION
+
+
 """
 # Import the built-in logging module and configure it so that Word2Vec 
 # creates nice output messages
